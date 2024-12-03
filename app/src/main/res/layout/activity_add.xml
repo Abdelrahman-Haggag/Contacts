@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/background_color"
+        android:layout_width="417dp"
+        android:layout_height="85dp"
+        android:background="@color/cool_Sky"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="259dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:text="Create contact"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/background_color"
+        app:layout_constraintStart_toStartOf="@+id/contact_iv_exit"
+        app:layout_constraintTop_toTopOf="@+id/background_color"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/user_name_edt"
+        android:layout_width="203dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="36dp"
+        android:padding="20dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="Abdelrahman" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="143dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="240dp"
+        android:padding="20dp"
+        android:text="Name:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/phone_tv"
+        android:layout_width="139dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="432dp"
+        android:padding="20dp"
+        android:text="Phone:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/phone_edt"
+        android:layout_width="207dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="432dp"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="01020658532" />
+
+    <Button
+        android:id="@+id/add_to_database"
+        android:layout_width="154dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/cool_Sky"
+        android:text="Save"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/contact_iv_exit"
+        android:layout_width="75dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
